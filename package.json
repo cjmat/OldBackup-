@@ -1,0 +1,30 @@
+{
+  "name": "archive-notes",
+  "version": "1.0.0",
+  "description": "A note-taking app with Markdown and LaTeX support",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^28.1.0",
+    "electron-builder": "^24.14.3"
+  },
+  "build": {
+    "appId": "com.yourdomain.archivenotes",
+    "productName": "Archive Notes",
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "buildResources": "build"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
